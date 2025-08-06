@@ -80,34 +80,31 @@ export default function Meaning({
 				</div>
 			</div>
 
-			{/* select meaning button (not creating a component for that) */}
-			{wordData.meanings.length > 1 && (
-				<div className={styles.selectMeaningBox}>
-					{wordData.meanings.map((_, index) => {
-						const isUnlocked = index <= attempts || gameOver
+			<div className={styles.selectMeaningBox}>
+				{wordData.meanings.map((_, index) => {
+					const isUnlocked = index <= attempts || gameOver
 
-						return (
-							<button
-								key={index}
-								onClick={() => {
-									setMeaningIndex(index)
-								}}
-								disabled={!isUnlocked}
-								className={clsx(
-									styles.selectMeaningBtn,
-									isUnlocked
-										? currentMeaningIndex === index
-											? styles.selectMeaningBtnActive
-											: null
+					return (
+						<button
+							key={index}
+							onClick={() => {
+								setMeaningIndex(index)
+							}}
+							disabled={!isUnlocked}
+							className={clsx(
+								styles.selectMeaningBtn,
+								isUnlocked
+									? currentMeaningIndex === index
+										? styles.selectMeaningBtnActive
 										: null
-								)}
-							>
-								{index + 1}
-							</button>
-						)
-					})}
-				</div>
-			)}
+									: null
+							)}
+						>
+							{index + 1}
+						</button>
+					)
+				})}
+			</div>
 		</div>
 	)
 }
