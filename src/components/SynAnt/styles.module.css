@@ -1,0 +1,53 @@
+.synAnt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 3px solid var(--color-accent-hover);
+    padding: 3px 12px;
+    border-radius: 10px;
+    color: var(--color-accent);
+    transition: .1s;
+}
+
+.synBtn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+}
+
+.antBtn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+}
+
+.activeBtn {
+    background-color: var(--color-accent-hover);
+    color: var(--color-text);
+    transition: .1s;
+}
+
+.content {
+    width: 100%;
+    color: var(--color-accent-hover);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.contentListSpan {
+    background-color: var(--color-border);
+    padding: 0px 5px;
+    border-radius: 5px;
+    color: var(--color-accent);
+}

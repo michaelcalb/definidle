@@ -1,0 +1,59 @@
+.meaningContainer {
+    width: 100%;
+}
+
+.meaning {
+    width: 100%;
+    background-color: var(--color-text);
+    padding: 20px;
+    border-radius: 5px 5px 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.meaningBox {
+    color: var(--color-background);
+    font-size: 1.2rem;
+    border-left: 3px solid var(--color-accent-hover);
+    border-radius: 3px;
+    padding: 6px;
+}
+
+.selectMeaningBox {
+    display: flex;
+    gap: 5px;
+}
+
+.selectMeaningBtn {
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 0 5px 5px;
+    background-color: var(--color-text);
+    color: var(--color-accent-hover);
+    transition: .1s;
+}
+
+.selectMeaningBtnActive {
+    border: 3px solid var(--color-accent-hover);
+    border-top: none;
+    color: var(--color-accent);
+    transition: .1s;
+    font-weight: bold;
+}
+
+.selectMeaningBtn:disabled {
+    color: var(--color-border);
+    cursor: not-allowed;
+    transition: .1s;
+}

@@ -1,0 +1,109 @@
+.gameOverModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.modalContent {
+    position: relative;
+    background-color: var(--color-text);
+    border: 5px solid var(--color-border);
+    border-radius: 20px;
+    color: var(--color-accent);
+    width: 80%;
+    max-width: 400px;
+    height: 80%;
+    max-height: 400px;
+    animation: upFromTheBottom .5s;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@keyframes upFromTheBottom /* LP reference */ {
+    0% {
+        transform: translateY(50%) scale(.5);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+.closeBtn {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    align-self: flex-end;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-border);
+    transition: .1s;
+}
+
+.closeBtn:hover {
+    color: var(--color-accent);
+    transition: .1s;
+    transform: scale(1.1);
+}
+
+.title {
+    font-size: 3rem;
+    color: var(--color-accent-hover);
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wordText {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-accent-hover);
+}
+
+.word {
+    color: var(--color-accent);
+    border-bottom: 3px solid var(--color-accent-hover);
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 2rem;
+}
+
+.attemptsText {
+    color: var(--color-accent-hover);
+    font-size: 1.5rem;
+}
+
+.attempts {
+    color: var(--color-accent);
+}
+
+.nextWord {
+    color: var(--color-accent-hover);
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.nextWordTimer {
+    color: var(--color-accent);
+}
+
+.invisible {
+    opacity: 0;
+}

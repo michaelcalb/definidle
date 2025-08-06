@@ -1,0 +1,50 @@
+.container {
+    width: fit-content;
+    height: fit-content;
+    padding: 2px 10px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    color: black;
+}
+
+/* parts of speech */
+
+.noun {
+    background-color: #ff579d;
+}
+
+.verb {
+    background-color: #ff3d3d;
+}
+
+.adjective {
+    background-color: #ffaa3c;
+}
+
+.adverb {
+    background-color: #ffec3e;
+}
+
+.pronoun {
+    background-color: #e2ff40;
+}
+
+.preposition {
+    background-color: #6eff4a;
+}
+
+.conjuction {
+    background-color: #4dffa6;
+}
+
+.interjection, .exclamation {
+    background-color: #56ffe8;
+}
+
+.article {
+    background-color: #4e60ff;
+}
+
+.determiner {
+    background-color: #ff65f7;
+}

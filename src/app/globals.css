@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+:root {
+    --color-background: #9a8c98;
+    --color-text: #22223b;
+    --color-accent: #f2e9e4;
+    --color-accent-hover: #c9ada7;
+    --color-border: #4a4e69;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-border);
+    display: flex;
+    flex-direction: column;
+}
+
+.notAvailable {
+    font-style: italic;
+    color: var(--color-background);
+}

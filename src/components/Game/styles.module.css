@@ -1,0 +1,73 @@
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gameContent {
+    flex: 1;
+    width: 80%;
+    max-width: 600px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.guessBox {
+    width: 50%;
+    min-width: 400px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-text);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.guessInput {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid var(--color-accent-hover);
+    border-radius: 3px;
+    font-size: 2rem;
+    color: var(--color-accent);
+    padding: 6px;
+}
+
+.guessBtn {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    color: var(--color-accent);
+    cursor: pointer;
+    height: 100%;
+}
+
+.guessBtn:hover {
+    color: var(--color-accent-hover);
+}
+
+.lifeBox {
+    background-color: var(--color-text);
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 5px;
+}
+
+.life {
+    color: var(--color-background);
+    fill: var(--color-accent);
+}
+
+.heart {
+    color: var(--color-background);
+}
