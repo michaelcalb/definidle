@@ -35,7 +35,7 @@ export default function Meaning({
 	/* example logic here so Quote.tsx is used only for rendering (cuz I want to :D ) */
 	const attemptsUnlockEx = 2
 	const isExUnlocked = attempts >= attemptsUnlockEx || gameOver
-	const isExAvailable = definition.examples?.[0].length > 0
+	const isExAvailable = definition.examples?.length > 0
 	const getExampleContent = () => {
 		return isExUnlocked ? (
 			isExAvailable ? (
