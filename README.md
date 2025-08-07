@@ -1,6 +1,6 @@
 # 📖 Definidle  
 **Guess the word by its definition.**  
-[👉 Play the game](https://definidle.vercel.app/)
+[definidle](https://definidle.vercel.app/)
 
 ## 🧠 What is it?
 
