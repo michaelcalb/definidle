@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📖 Definidle  
+**Guess the word by its definition.**  
+[definidle](https://definidle.vercel.app/)
 
-## Getting Started
+## 🧠 What is it?
 
-First, run the development server:
+**Definidle** is a simple Wordle-style game where you guess a daily word based on its:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- ✅ Definition  
+- 💬 Examples *(when available)*  
+- 🔄 Synonyms & Antonyms *(when available)*  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚙️ How it works
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- A random word is fetched daily from the [Random Word API](https://random-word-api.vercel.app/).
+- Definitions and metadata come from [dictionaryapi.dev](https://dictionaryapi.dev/).
+- The word of the day is stored in **MongoDB**.
+- An [Upstash Scheduler](https://upstash.com/scheduler) triggers the word update once a day.
+- Hosted on **Vercel (free plan)**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚠️ Limitations
 
-## Learn More
+- Some words may **lack examples or synonyms/antonyms** due to API coverage gaps.
+- Since most logic is client-side, **cheating is easy** (intentionally kept lightweight).
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Built with
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js](https://nextjs.org/)  
+- [random-word-api](https://random-word-api.vercel.app/)  
+- [dictionaryapi.dev](https://dictionaryapi.dev/)  
+- [MongoDB](https://www.mongodb.com/)  
+- [Upstash Scheduler](https://upstash.com/scheduler)  
+- [Vercel](https://vercel.com/) *(free tier)*  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+💡 *Built just for fun and learning Next.js.*
