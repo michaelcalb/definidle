@@ -10,10 +10,10 @@
     background-color: transparent;
     font-size: 1.5rem;
     cursor: pointer;
-    border: 3px solid var(--color-accent-hover);
+    border: 3px solid var(--color-btn-border);
     padding: 3px 12px;
     border-radius: 10px;
-    color: var(--color-accent);
+    color: var(--color-btn-text);
     transition: .1s;
 }
 
@@ -30,14 +30,13 @@
 }
 
 .activeBtn {
-    background-color: var(--color-accent-hover);
-    color: var(--color-text);
+    background-color: var(--color-btn-border);
     transition: .1s;
 }
 
 .content {
     width: 100%;
-    color: var(--color-accent-hover);
+
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
@@ -46,8 +45,8 @@
 }
 
 .contentListSpan {
-    background-color: var(--color-border);
+    background-color: var(--color-box-border);
     padding: 0px 5px;
     border-radius: 5px;
-    color: var(--color-accent);
+    color: var(--color-box-title);
 }

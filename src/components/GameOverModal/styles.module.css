@@ -14,10 +14,10 @@
 
 .modalContent {
     position: relative;
-    background-color: var(--color-text);
-    border: 5px solid var(--color-border);
+    background-color: var(--color-box-background);
+    border: 5px solid var(--color-box-border);
     border-radius: 20px;
-    color: var(--color-accent);
+    color: var(--color-box-text);
     width: 80%;
     max-width: 400px;
     height: 80%;
@@ -48,19 +48,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-border);
+    color: var(--color-btn);
+    opacity: .5;
     transition: .1s;
 }
 
 .closeBtn:hover {
-    color: var(--color-accent);
+    opacity: 1;
     transition: .1s;
     transform: scale(1.1);
 }
 
 .title {
-    font-size: 3rem;
-    color: var(--color-accent-hover);
+    font-size: 2rem;
+    color: var(--color-box-title);
 }
 
 .group {
@@ -73,35 +74,35 @@
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
-    color: var(--color-accent-hover);
+    color: var(--color-box-text);
 }
 
 .word {
-    color: var(--color-accent);
-    border-bottom: 3px solid var(--color-accent-hover);
+    color: var(--color-box-title);
+    border-bottom: 3px solid var(--color-box-border);
     font-weight: bold;
     border-radius: 3px;
     font-size: 2rem;
 }
 
 .attemptsText {
-    color: var(--color-accent-hover);
+    color: var(--color-box-text);
     font-size: 1.5rem;
 }
 
 .attempts {
-    color: var(--color-accent);
+    color: var(--color-box-title);
 }
 
 .nextWord {
-    color: var(--color-accent-hover);
+    color: var(--color-box-text);
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
 }
 
 .nextWordTimer {
-    color: var(--color-accent);
+    color: var(--color-box-title);
 }
 
 .invisible {

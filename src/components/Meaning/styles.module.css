@@ -4,7 +4,7 @@
 
 .meaning {
     width: 100%;
-    background-color: var(--color-text);
+    background-color: var(--color-box-background);
     padding: 20px;
     border-radius: 5px 5px 5px 0;
     display: flex;
@@ -19,14 +19,6 @@
     gap: 10px;
 }
 
-.meaningBox {
-    color: var(--color-background);
-    font-size: 1.2rem;
-    border-left: 3px solid var(--color-accent-hover);
-    border-radius: 3px;
-    padding: 6px;
-}
-
 .selectMeaningBox {
     display: flex;
     gap: 5px;
@@ -39,21 +31,21 @@
     border: none;
     cursor: pointer;
     border-radius: 0 0 5px 5px;
-    background-color: var(--color-text);
-    color: var(--color-accent-hover);
+    background-color: var(--color-box-background);
+    color: var(--color-btn-text);
+    opacity: 1;
     transition: .1s;
 }
 
 .selectMeaningBtnActive {
-    border: 3px solid var(--color-accent-hover);
+    border: 3px solid var(--color-btn-border);
     border-top: none;
-    color: var(--color-accent);
     transition: .1s;
     font-weight: bold;
 }
 
 .selectMeaningBtn:disabled {
-    color: var(--color-border);
+    opacity: .5;
     cursor: not-allowed;
     transition: .1s;
 }

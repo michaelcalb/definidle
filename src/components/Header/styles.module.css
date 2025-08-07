@@ -6,17 +6,17 @@
     border-radius: 0 0 50px 50px;
     text-align: center;
     justify-content: center;
-    background-color: var(--color-background);
+    background-color: var(--color-header-background);
     flex-shrink: 0;
 }
 
 .title {
     letter-spacing: .1rem;
     font-size: 3rem;
-    color: var(--color-accent);
+    color: var(--color-header-title);
 }
 
 .desc {
-    color: var(--color-text);
+    color: var(--color-header-text);
     font-size: 1.2rem;
 }

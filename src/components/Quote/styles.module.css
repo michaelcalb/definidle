@@ -1,15 +1,15 @@
 .quote {
-    border-left: 3px solid var(--color-accent-hover);
+    border-left: 3px solid var(--color-quote-border);
     border-radius: 3px;
     padding: 6px;
 }
 
 .type {
-    color: var(--color-background);
+    color: var(--color-quote-type);
     font-size: 1.2rem;
 }
 
 .content {
-    color: var(--color-accent-hover);
+    color: var(--color-quote-content);
     font-size: 1.5rem;
 }
