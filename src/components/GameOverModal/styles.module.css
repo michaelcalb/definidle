@@ -30,7 +30,7 @@
     text-align: center;
 }
 
-@keyframes upFromTheBottom /* LP reference */ {
+@keyframes upFromTheBottom {
     0% {
         transform: translateY(50%) scale(.5);
     }

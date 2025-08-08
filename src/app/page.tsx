@@ -3,8 +3,6 @@ import clientPromise from '@/lib/mongo'
 import type { WordOfTheDay } from '@/models/word'
 import { notFound } from 'next/navigation'
 
-export const dynamic = 'force-dynamic'
-
 export default async function Page() {
 	try {
 		const client = await clientPromise
