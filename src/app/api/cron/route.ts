@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { fetchAndStoreWord } from '@/lib/fetchWord'
-import { revalidatePath } from 'next/cache'
+import { revalidateTag } from 'next/cache'
 
 export async function GET(request: Request) {
 	const key = request.headers.get('x-api-key')
@@ -20,7 +20,7 @@ export async function GET(request: Request) {
 		const storedWord = await fetchAndStoreWord()
 		console.log('Successfully stored word:', storedWord.word)
 
-		revalidatePath('/')
+		revalidateTag('daily-word')
 
 		return NextResponse.json({
 			status: 'success',
